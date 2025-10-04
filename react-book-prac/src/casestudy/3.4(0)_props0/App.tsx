@@ -3,7 +3,7 @@ import Body from "./Body";
 export default function App() {
     return(
         <>
-            <Body></Body>
+            <Body name="Minsung" age={31}></Body>
         </>
     )
 }
