@@ -22,6 +22,7 @@ export default function App() {
             <form>
                 <input 
                     type="text"
+                    // value 속성 없으므로 브라우저에서 관리
                     placeholder="CHANGE NAME"
                     onChange={changeHandler}
                 />

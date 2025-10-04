@@ -3,8 +3,8 @@ import { useState } from "react";
 // state => state ... 형식 통한 기존 값 기반 동작
 
 export default function App() {
-    const [count, setCount] = useState(0);
-    
+    const [count, setCount] = useState(0);  // useState는 항상 함수 안 첫번째
+
     const clickHandler = () => {
         setCount(count => count + 1)
     }
