@@ -14,7 +14,7 @@ export default function Body(props: BodyProps) {
             <button onClick={clickHandler2}>TRY CLICK2</button><br/>
             <button onClick={()=>clickHandler3("My custom pop up")}>TRY CLICK3</button><br/>
 
-            <small>3.5(0)_event-n-function</small>
+            <small>3.5(0)_inline-n-reference</small>
         </>
     )
 }
