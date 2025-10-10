@@ -1,0 +1,82 @@
+<이력>
+
+251003
+- git push
+
+- (Ch1.3) Vite 프로젝트 생성
+ㄴ npm create vite@latest
+   framework:react, variant:typescript
+- 정상 동작 확인
+ㄴ 프로젝트 경로로 이동 
+   npm run dev
+- git push
+ㄴ git commit -m "(Ch1.3) 1. Vite 프로젝트 생성, 2. 정상 동작 확인"
+
+- (Ch1.3.2) 프로젝트 기본 정리
+ㄴ src/assets 안에 비우기
+ㄴ App.css, index.css 파일 전체 주석화
+ㄴ main.tsx에서 index.css를 import하는 줄 주석화
+ㄴ App.tsx 내용 단순화:
+    export default function App() {
+	  return(
+		<div>Hello World</div>
+	  )
+	}
+- 프로젝트 구조 복습
+ㄴ package.json: 프로젝트 설정(프로젝트 메타 정보, 라이브러리, 명령어)
+ㄴ index.html: main.tsx를 불러옴 (, 리액트 앱 실행 위한 최소한의 html)
+ㄴ main.tsx: app.tsx를 불러옴 (, 리액트 앱 초기화)
+ㄴ App.tsx: 루트 컴포넌트 ← 코딩의 시작점 ※ 컴포넌트는 첫글자 대문자
+- git push
+ㄴ git commit -m "(Ch1.3.2) 1.프로젝트 기본 정리, 2. 프로젝트 구조 복습"
+
+- 독립적인 실습 폴더 구조 생성
+ㄴ casestudy 폴더 안에 App.tsx 생성
+ㄴ main.tsx에서 App을 import하는 경로를 달리함
+- git push
+ㄴ git commit -m "독립적인 실습 폴더 구조 생성"
+
+- (Ch4.2.1) useState 훅 기본기: state=>state... 형식 기존값 기반 동작 
+ㄴ useState 입력, CTRL + . 으로 import
+ㄴ 큰 차이는 없지만 설정 변경: CTRL + , → javascript.preferences.importModuleSpecifier를 relative로
+ㄴ 구조: 1. 훅 사용, 2. 훅 제공 함수 기반 동작 정의, 3. jsx 반환 
+
+- 여러 state 관리
+ㄴ 이벤트, 폼 활용
+- git push
+ㄴ git commit -m "(Ch4.2.1) 1.useState 훅 기본기: state=>state... 형식 기존값 기반 동작, 2.여러 state 관리"
+
+- (책 별도 진행) 실시간 아닌 submit 버튼 클릭 후에 이름 변경
+ㄴ draftName 도입으로 초안 이름 별도 state 저장, input의 value 속성은 draftName으로
+ㄴ onSubmit 활용으로 submit 때에만 name을 draftName으로 저장
+- git push
+ㄴ git commit -m "책 별도 진행) 실시간 아닌 submit 버튼 클릭 후에 이름 변경: 1.draftName 도입 및 value 속성 값 지정, 2.onSubmit 활용"
+
+1004
+- (Ch3.4) props 연습 위해 일단 기본 App 및 컴포넌트 작성
+- git push
+ㄴ git commit -m "(Ch3.4) props 연습 위해 일단 기본 App 및 컴포넌트 작성"
+- (Ch3.4) 다양한 props 관련 연습
+- (Ch3.5) 함수 넘기기 연습 시작
+- git push
+ㄴ 커밋 메시지 squat 및 변경 연습: git rebase -i HEAD~2 → squash / reword → git log --oneline -n 4
+ㄴ git commit -m "1.(Ch3.4) 다양한 props 관련 연습, 2.(Ch3.5) 함수 넘기기 연습 시작"
+
+- (Ch3.5) parameter 있는 함수 및 이벤트 객체 넘기기 연습
+ㄴ parameter 필요할 때 1. 인라인으로 파라미터 채워서 함수 넘기는 방식, 2. 함수 참조로 넘긴 후 컴포넌트 안에서 파라미터 채우는 방식
+ㄴ 이벤트 객체 필요할 때, 이벤트 객체 및 파라미터 둘 다 필요할 때
+- git push
+ㄴ git commit -m "(Ch3.5) parameter 있는 함수 및 이벤트 객체 넘기기 연습"
+
+
+
+1005
+
+
+* 버블링 활용 예시
+* 나만의 state + 함수 props 사용 템플릿 예시
+
+
+--------------------------------------------------------------------
+<공통 팁>
+CTRL + . ▶ VSCode에서 import 등 (경고 시)Quick Fix / Code Action

@@ -23,6 +23,7 @@ export default function Body(props: BodyProps) {
         </>
     )
 }
+
 // React.ChangeEvent<HTMLInputElement> → <input> 같은 입력 변화
 // React.MouseEvent<HTMLButtonElement> → 버튼 클릭
 // React.FormEvent<HTMLFormElement> → 폼 제출

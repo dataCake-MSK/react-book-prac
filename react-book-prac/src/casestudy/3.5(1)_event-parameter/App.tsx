@@ -24,7 +24,7 @@ export default function App() {
     }
     const clickHandler5 = (e: React.MouseEvent<HTMLButtonElement>, poptext:string) => {
         if (e.button == 2){
-            e.preventDefault()
+            e.preventDefault()  // 우클릭 시 컨텍스트 메뉴 발생 방지
             alert(poptext)
         }
     }
@@ -41,3 +41,8 @@ export default function App() {
         </>
     )
 }
+
+// React.ChangeEvent<HTMLInputElement> → <input> 같은 입력 변화
+// React.MouseEvent<HTMLButtonElement> → 버튼 클릭
+// React.FormEvent<HTMLFormElement> → 폼 제출
+// React.KeyboardEvent<HTMLInputElement> → 키보드 입력
