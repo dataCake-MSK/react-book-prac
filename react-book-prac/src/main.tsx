@@ -1,10 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './casestudy/5.3(0)_tailwindcss-compare/index.css'
-import App from './casestudy/5.3(0)_tailwindcss-compare/App.tsx'
+import { BrowserRouter } from 'react-router'
+import './index.css'
+import App from './casestudy/13.3(1)_layout-route/App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>  {/* Ch13.3 위함, Ch13.3 제외 불필요 */}
+        <App />
+    </BrowserRouter>
   </StrictMode>,
 )
