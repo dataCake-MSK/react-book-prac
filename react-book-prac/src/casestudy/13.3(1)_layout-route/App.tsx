@@ -23,5 +23,5 @@ export default function App () {
 
 // 현재 경로
 // 1. /
-// 2. /service
-// 3. /service/lowermenu
+// 2. /Service
+// 3. /Service/LowerMenu
